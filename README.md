@@ -14,8 +14,8 @@
     
 #Data Exploration:
 
-![image](https://user-images.githubusercontent.com/52540495/178807947-f273bdeb-0ab0-4058-9439-aead16061048.png)
-
+<img width="233" alt="Screen Shot 2022-07-13 at 2 32 15 PM" src="https://user-images.githubusercontent.com/52540495/178810155-6812d3c4-147e-4cfd-b607-767226fe4081.png">
+    
 #Exploratory Data Analysis:
 
 The exploratory data analysis is performed on the crime and incarceration data of United States for 50 states from year 2001 to 2016 which 
