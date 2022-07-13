@@ -24,7 +24,7 @@ The exploratory data analysis is performed on the crime and incarceration data o
 contains 17 data field values and 816 rows of data having categorical, numerical, and boolean type data. The different parameters of the dataset 
 are state, year, prisoner count, crimes estimated, violent crime total, rape legacy, and other various types of crime data. 
 
-<img width="475" alt="image" src="https://user-images.githubusercontent.com/52540495/178806582-738304c6-e662-42e0-a2f1-4903e9560ec0.png">
+<img width="681" alt="Screen Shot 2022-07-13 at 2 53 24 PM" src="https://user-images.githubusercontent.com/52540495/178809696-a4fd6fcf-767e-4dd2-8599-b926f8c72657.png">
 
 <img width="508" alt="image" src="https://user-images.githubusercontent.com/52540495/178806599-be8b5e37-6d0c-4210-bb9d-39be99a6c2af.png">
 
