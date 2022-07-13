@@ -63,15 +63,17 @@ cleaning steps.
  shown in the below figure. As observed from the boxplot, we can see that there are outliers present in the field values of prisoner count and 
  violent crime total data.  
   
-#Data Visulization: 
+#Data Visulization:
 
 <img width="501" alt="image" src="https://user-images.githubusercontent.com/52540495/178806934-c054b16f-c88f-43d2-b839-030dda174527.png">
 
-The next visual is the average prisoner count in the year which helps in understanding the prisoner count during the years from 2001 to 2016 and the previous year analysis with respect to the prisoner count would be important to analyze as this would help understand the data and information for the previous years in order to compare it with the future reports change. As observed, the highest average prisoner count of 29,895 is in the year 2009 and the lowest average prisoner count of 26,075 is in the year 2001. Also, after the year 2009 the average count of prisoners decreased until 2016.
+The above visual represents the prisoner count in each state and as it is observed the count of prisoners is highest in the state of California and Texas. This gives an overview of the distribution of prisoners in each states which is helpful in analyzing the count of prisoners in each state based on crime types. Through this analysis we get an understanding for the crimes estimated and the imprisonment obtained for the crimes within the state. 
 
 Average Prisoner Count in the year: 
 
 <img width="486" alt="image" src="https://user-images.githubusercontent.com/52540495/178806954-915130e2-50d4-4501-91f5-6da6414f0f80.png">
+
+The above visual is the average prisoner count in the year which helps in understanding the prisoner count during the years from 2001 to 2016 and the previous year analysis with respect to the prisoner count would be important to analyze as this would help understand the data and information for the previous years in order to compare it with the future reports change. As observed, the highest average prisoner count of 29,895 is in the year 2009 and the lowest average prisoner count of 26,075 is in the year 2001. Also, after the year 2009 the average count of prisoners decreased until 2016.
 
 Murder Manslaughter per State: 
 
@@ -105,7 +107,7 @@ The independent variables considered for the implementation of the Decision Tree
 
 #Random Forest Regressor Model 
 
- For the prediction of the prisoner count, the features selected for the training of the model is same as that selected for the Linear Regression model and Decision Tree model. The data is split into 80-20 ratio for training and testing of the model where the Random Forest Regressor is implemented with a minimum of 5000 tress and maximum depth branch of 5. The accuracy of the model obtained is 99% for training data and 98.8% for test dataset. The feature importance and model evaluation for the random forest regressor model is as follows.
+For the prediction of the prisoner count, the features selected for the training of the model is same as that selected for the Linear Regression model and Decision Tree model. The data is split into 80-20 ratio for training and testing of the model where the Random Forest Regressor is implemented with a minimum of 5000 tress and maximum depth branch of 5. The accuracy of the model obtained is 99% for training data and 98.8% for test dataset. The feature importance and model evaluation for the random forest regressor model is as follows.
  
 <img width="557" alt="image" src="https://user-images.githubusercontent.com/52540495/178807236-2d1421d6-1b36-467a-b134-cdfd5b0ca741.png">
 
