@@ -1,8 +1,8 @@
-#DataMiningProject for Crime and Incarceration in the United States
+# DataMiningProject for Crime and Incarceration in the United States
 
-###Dataset: Crime and Incarceration in the United States
+## Dataset: Crime and Incarceration in the United States
 
-###About Dataset:
+## About Dataset:
     
     1. With 240,593 inmates housed in state or federal facilities in 1975, the US reached a new high. Over the course of the following 34 years, 
     the United States set new records in every category. There are currently more over 1,550,000 prisoners in the US. The United States is home to 
@@ -12,11 +12,11 @@
     has grown roughly three times as quickly as that on primary and secondary education over this time. Does the substantial investment in incarceration 
     increase public safety? To aid academics in examining this link, this dataset combines data on crime and incarceration.
     
-###Data Exploration:
+## Data Exploration:
 
 <img width="233" alt="Screen Shot 2022-07-13 at 2 32 15 PM" src="https://user-images.githubusercontent.com/52540495/178810155-6812d3c4-147e-4cfd-b607-767226fe4081.png">
     
-###Exploratory Data Analysis:
+## Exploratory Data Analysis:
 
 The exploratory data analysis is performed on the crime and incarceration data of United States for 50 states from year 2001 to 2016 which 
 contains 17 data field values and 816 rows of data having categorical, numerical, and boolean type data. The different parameters of the dataset 
@@ -26,14 +26,14 @@ are state, year, prisoner count, crimes estimated, violent crime total, rape leg
 
 <img width="508" alt="image" src="https://user-images.githubusercontent.com/52540495/178806599-be8b5e37-6d0c-4210-bb9d-39be99a6c2af.png">
 
-###Data Profiling:
+## Data Profiling:
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/52540495/178806652-87bea27a-04d8-4e57-9b24-d186ee559c7e.png">
 
 Here, we can observe that there are 871 missing values which is 6.3% missing cells in the dataset having no duplicate rows, which has 13 numerical data,
 1 categorical data, and 3 boolean data values. 
 
-###Data Cleaning:
+## Data Cleaning:
 
 <img width="284" alt="image" src="https://user-images.githubusercontent.com/52540495/178806681-a3954694-9d52-44c1-97a5-debaffb971e1.png">
 
@@ -63,35 +63,35 @@ cleaning steps.
  shown in the below figure. As observed from the boxplot, we can see that there are outliers present in the field values of prisoner count and 
  violent crime total data.  
   
-###Data Visulization:
+## Data Visulization:
 
-Prisoner Count in each state:
+###### Prisoner Count in each state:
 
 <img width="501" alt="image" src="https://user-images.githubusercontent.com/52540495/178806934-c054b16f-c88f-43d2-b839-030dda174527.png">
 
 The above visual represents the prisoner count in each state and as it is observed the count of prisoners is highest in the state of California and Texas. This gives an overview of the distribution of prisoners in each states which is helpful in analyzing the count of prisoners in each state based on crime types. Through this analysis we get an understanding for the crimes estimated and the imprisonment obtained for the crimes within the state. 
 
-Average Prisoner Count in the year: 
+###### Average Prisoner Count in the year: 
 
 <img width="486" alt="image" src="https://user-images.githubusercontent.com/52540495/178806954-915130e2-50d4-4501-91f5-6da6414f0f80.png">
 
 The above visual is the average prisoner count in the year which helps in understanding the prisoner count during the years from 2001 to 2016 and the previous year analysis with respect to the prisoner count would be important to analyze as this would help understand the data and information for the previous years in order to compare it with the future reports change. As observed, the highest average prisoner count of 29,895 is in the year 2009 and the lowest average prisoner count of 26,075 is in the year 2001. Also, after the year 2009 the average count of prisoners decreased until 2016.
 
-Murder Manslaughter per State: 
+###### Murder Manslaughter per State: 
 
 <img width="499" alt="image" src="https://user-images.githubusercontent.com/52540495/178806974-fffe595f-3693-492c-9475-b11d6fc85599.png">
 
 The above visual represents the murder manslaughter per state which shows that Mississippi and Oklahoma have the highest count of murder manslaughter as compared to the other states and this analysis will be helpful in pointing to the researchers based on a particular crime type. As mentioned earlier, violent crime, murder manslaughter, and aggravated assault are the interested crime types which need to be considered and hence this is one of the analysis that would be further useful in the comparison of the crime stating reports.
 
-###PreModeling:
+## PreModeling:
 
-###Correlation Plot 
+## Correlation Plot 
 
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/52540495/178807067-e8a26b29-3394-490a-adca-a5f070894513.png">
 
 The correlation plot helps to understand the correlation between each of the independent variables of the dataset and to plot the correlation values of the parameters to know the collinearity between the variables such that the variables with high collinearity value can be dropped in order to avoid multicollinearity and overfitting of the model. From the correlation plot it is observed that since there are different crime variables having the same value, there is a high collinearity that is existing between the variables with a correlation value of 0.9. This would result in multicollinearity and the model would outperform resulting in inaccurate model and results. Thus, some of the features having high collinearity are dropped before considering them for training of the model. 
 
-###Model Building:
+## Model Building:
 
 Linear regression is a basic predictive analytics approach that predicts an output variable using historical data. The core concept is that if we can fit a linear regression model to observed data, we can use it to predict future values. The implementation of the Linear Regressor Model consist of various features such as jurisdiction, includes_jails, state_population, violent_crime_total, murder_manslaughter, and agg_assault for the prediction of the prisoner count in each state. The accuracy obtained for both the training and testing set of the Linear Regression model is 92% and 91.01% respectively. Since this is a regressor type of model, the model evaluation is based on the MAE, MSE, RMSE and R-Squared values in order to determine the prediction error of the model implemented.
 
@@ -99,7 +99,7 @@ Linear regression is a basic predictive analytics approach that predicts an outp
 
 <img width="180" alt="image" src="https://user-images.githubusercontent.com/52540495/178807134-f98189c2-bb5f-4df2-a7cf-e76e67183f49.png">
 
-###Decision Tree Regressor Model 
+## Decision Tree Regressor Model 
 
 The independent variables considered for the implementation of the Decision Tree Regressor are 'jurisdiction', 'includes_jails', 'state_population', 'violent_crime_total', 'murder_manslaughter', and 'agg_assault'. The decision tree model is implemented with a train and test data split of 80-20 with a maximum branch depth of 5. The accuracy of the Decision Tree model obtained for the prediction of the prisoner count is 99% for both the training and testing set, which is a good accuracy overall, but machine learning models having a 99% accuracy is not effective. This is because the model is overfitted due to the multicollinearity of the parameters and passing less data values for the training of the model. The feature importance, and model evaluation for the Decision Tree Regressor model is as follows. 
 
@@ -107,13 +107,13 @@ The independent variables considered for the implementation of the Decision Tree
 
 <img width="223" alt="image" src="https://user-images.githubusercontent.com/52540495/178807192-07a4bfd9-8bda-4c33-afe1-06a80a03965d.png">
 
-###Random Forest Regressor Model 
+## Random Forest Regressor Model 
 
 For the prediction of the prisoner count, the features selected for the training of the model is same as that selected for the Linear Regression model and Decision Tree model. The data is split into 80-20 ratio for training and testing of the model where the Random Forest Regressor is implemented with a minimum of 5000 tress and maximum depth branch of 5. The accuracy of the model obtained is 99% for training data and 98.8% for test dataset. The feature importance and model evaluation for the random forest regressor model is as follows.
  
 <img width="557" alt="image" src="https://user-images.githubusercontent.com/52540495/178807236-2d1421d6-1b36-467a-b134-cdfd5b0ca741.png">
 
-###Regressor Model Comparison 
+## Regressor Model Comparison 
 
 <img width="656" alt="Screen Shot 2022-07-13 at 2 41 37 PM" src="https://user-images.githubusercontent.com/52540495/178807477-f8a26094-b4e4-443e-9c47-353ca088700f.png">
 
